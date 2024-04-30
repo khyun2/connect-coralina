@@ -1,0 +1,54 @@
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.regi {
+    border-radius: 10px;
+    grid-row: 1/2;
+    height: 200px;
+    background-image: linear-gradient(#FEDAD9, #FFBCBD);
+    position: relative;
+}
+.trans {
+    border-radius: 10px;
+    grid-row: 2/3;
+    background-image: linear-gradient(#FEDAD9, #FFBCBD);
+    position: relative;
+}
+.advi {
+    border-radius: 10px;
+    grid-row: 3/4;
+    background-image: linear-gradient(#FEDAD9, #FFBCBD);
+    position: relative;
+}
+.regi-label {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #16315C;
+}
+.trans-label {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #16315C;
+}
+.advi-label {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #16315C;
+}
