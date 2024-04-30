@@ -3,3 +3,44 @@
 /*git pull*/ /*every time someone commits*/
 /*git commit -m "Commit message"*/
 /*git push origin master*/
+/*16315C Navy    F97375	Coral 1     FFBCBD Coral 2	  FEDAD9 Coral 3*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit";
+    font-size: 16px;
+}
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1 {
+    font-family: "Lexend";
+    font-weight: bold;
+    font-size: 30px;
+}
+h2 {
+    font-family: "Lexend";
+    font-size: 24px;
+}
+h3 {
+    font-family: "Outfit";
+    font-size: 18px;
+}
+
+
+/*basic button styling*/
+.button {
+    background-color: #FFBCBD;
+    transition: background-color 2s ease-in-out;
+}
+.button:hover, .button:active {
+    background-color: #F97375; 
+}
