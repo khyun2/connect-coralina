@@ -6,24 +6,44 @@
     border-radius: 12px;
     border: 2px solid #16315C;
 }
+label {
+    font-size: 20px;
+    font-weight: 600px;
+}
 label, input[type=submit] {
     display: block;
-    margin: 20px 0px 5px 0px;
+    margin: 20px 0px 8px 0px;
 }
 select, input[type=number] {
     border-radius: 8px;
     border: 1.5px solid #16315C;
     padding: 5px 10px;
 }
+.long {
+    width: 100%;
+}
+.half {
+    width: 40%;
+}
+.quarter {
+    width: 24.1%;
+}
+.threequarter {
+    width: 75%;
+}
 input[type=submit] {
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     background-color: #FFBCBD;
     border-radius: 8px;
-    border: 1.5px solid #16315C;
+    border: 2px solid #16315C;
     width: 100%;
     padding: 10px;
     text-decoration: none;
     text-align: center;
     transition: background-color 225ms ease-in-out;
+    margin-top: 80px;
     margin-bottom: 22px;
 }
 input[type=submit]:hover, input[type=submit].active {

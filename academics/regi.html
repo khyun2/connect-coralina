@@ -22,13 +22,13 @@
         <form>
           <!--term-->
           <label for="term">Term:</label>
-          <select id="term" name="term" required>
+          <select class="half" id="term" name="term" required>
             <option value="">__</option>
             <option value="sum24">Summer 2024</option>
             <option value="fall24">Fall 2024</option>
           </select>
           <label for="subject">Subject:</label>
-          <select id="subject" name="subject" required>
+          <select class="long" id="subject" name="subject" required>
             <option value="">__</option>
             <option value="asia">ASIA</option>
             <option value="biol">BIOL</option>
@@ -36,15 +36,15 @@
             <option value="stor">STOR</option>
           </select>
           <label for="relation">Course Number:</label>
-          <select id="relation" name="relation" required>
+          <select class="quarter" id="relation" name="relation" required>
             <option value="">__</option>
             <option value="lte">&lt;=</option>
             <option value="equal">=</option>
             <option value="gte">=></option>
           </select>
-          <input type="number" id="coursenum" min="50" max="999" required>
-          <label for="relation">Course Number:</label>
-          <select id="attribute" name="attribute" required>
+          <input class="threequarter" type="number" id="coursenum" min="50" max="999" required>
+          <label for="attribute">Attribute:</label>
+          <select class="long" id="attribute" name="attribute" required>
             <option value="">__</option>
             <option value="value">FC-VALUE</option>
             <option value="create">FC-CREATE</option>
