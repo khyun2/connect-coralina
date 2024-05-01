@@ -1,3 +1,6 @@
+main {
+    min-height: 75vh;
+}
 .searchcontainer {
     background-color: #FEDAD9;
     margin-top: 20px;
@@ -6,32 +9,9 @@
     border-radius: 12px;
     border: 2px solid #16315C;
 }
-label {
-    font-size: 20px;
-    font-weight: 600px;
-}
-label, input[type=submit] {
-    display: block;
-    margin: 20px 0px 8px 0px;
-}
-select, input[type=number] {
-    border-radius: 8px;
-    border: 1.5px solid #16315C;
-    padding: 5px 10px;
-}
-.long {
-    width: 100%;
-}
-.half {
-    width: 40%;
-}
-.quarter {
-    width: 24.1%;
-}
-.threequarter {
-    width: 75%;
-}
 input[type=submit] {
+    display: block;
+    margin: 20px 0px 20px 0px;
     font-family: "Lexend", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -43,8 +23,6 @@ input[type=submit] {
     text-decoration: none;
     text-align: center;
     transition: background-color 225ms ease-in-out;
-    margin-top: 80px;
-    margin-bottom: 22px;
 }
 input[type=submit]:hover, input[type=submit].active {
     background-color: #F97375; 
