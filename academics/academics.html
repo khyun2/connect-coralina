@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav-styles.css">
     <link rel="stylesheet" href="academics.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  </head>
+    <script src="responsive-nav.js"></script>
+</head>
   <body> 
     <header>
-        <div class="left-header white">
+        <div class="white">
             logo
         </div>
-        <div class="middle-header">
+        <div>
             <h1 class="white">Academics</h1>
         </div>
-        <div class="right-header white">
-            icon
+        <div class="nav-toggle">
+            <div class="nav-collapse">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">Personal Info</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Finances</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -34,7 +44,12 @@
         </div>
     </main>
     <footer>
-        hello
+        &#169;2024
     </footer>
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+          customToggle: "#toggle"
+        });
+    </script>
   </body>
 </html>
