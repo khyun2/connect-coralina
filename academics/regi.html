@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="regi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body> 
+    <header>
+      <div class="white">logo</div>
+      <div><h1 class="white">Course Registration</h1></div>
+      <div class="white">icon</div>
+    </header>
+    <main>
+      <h1>Course Search</h1>
+      <div class="searchcontainer">
+        <form>
+          <!--term-->
+          <label for="term">Term:</label>
+          <select id="term" name="term" required>
+            <option value="">__</option>
+            <option value="sum24">Summer 2024</option>
+            <option value="fall24">Fall 2024</option>
+          </select>
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject" required>
+            <option value="">__</option>
+            <option value="asia">ASIA</option>
+            <option value="biol">BIOL</option>
+            <option value="comp">COMP</option>
+            <option value="stor">STOR</option>
+          </select>
+          <label for="relation">Course Number:</label>
+          <select id="relation" name="relation" required>
+            <option value="">__</option>
+            <option value="lte">&lt;=</option>
+            <option value="equal">=</option>
+            <option value="gte">=></option>
+          </select>
+          <input type="number" id="coursenum" min="50" max="999" required>
+          <label for="relation">Course Number:</label>
+          <select id="attribute" name="attribute" required>
+            <option value="">__</option>
+            <option value="value">FC-VALUE</option>
+            <option value="create">FC-CREATE</option>
+            <option value="">=></option>
+          </select>
+          <input type="submit" value="Search">
+        </form>
+        <!-- <h3>Term:</h3>
+        <h3>Subject:</h3>
+        <h3>Course Number:</h3>
+        <h3>Attributes:</h3>
+        <div><a class="button" href="search.html"><h2>Search</h2></a></div> -->
+      </div>
+    </main>
+    <footer>
+      &#169;2024
+    </footer>
+
+  </body>
+</html>

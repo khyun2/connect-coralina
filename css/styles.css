@@ -28,16 +28,22 @@
 }
 h1 {
     font-family: "Lexend";
-    font-weight: bold;
+    font-weight: 600;
     font-size: 30px;
 }
 h2 {
     font-family: "Lexend";
     font-size: 16px;
+    font-weight: 600;
 }
 h3 {
     font-family: "Outfit";
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600px;
+}
+h4 {
+    font-family: "Outfit";
+    font-size: 16px;
 }
 .white {
     color: white
@@ -47,31 +53,8 @@ h3 {
 header {
     background-color: #16315C;
     width: 100%;
-    padding-left: 20px;
-    padding-top: 20px;
-    /* display: grid;
-    grid-template-columns: 1/6fr auto 1/6fr;
-    justify-content: space-between; */
+    padding: 25px;
 }
-/*not sure if this will vertically center our header*/
-/* .left-header {
-    grid-column: 1/2;
-    justify-content: start;
-    align-items: start;
-    padding: 30px 20px;
-}
-.middle-header {
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: start;
-    padding: 30px 20px;
-}
-.right-header {
-    grid-column: 3/4;
-    justify-content: end;
-    align-items: start;
-    padding: 30px 20px;
-} */
 
 main {
     width: 100%;
@@ -83,12 +66,15 @@ footer {
     color: white;
     width: 100%;
     height: 120px;
-    padding: 20px;
+    padding: 25px;
 }
 
 /*basic button styling*/
 .button {
     background-color: #FFBCBD;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
     transition: background-color 2s ease-in-out;
 
 }
