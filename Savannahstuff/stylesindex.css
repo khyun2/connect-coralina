@@ -28,7 +28,7 @@ body{
     padding:0;
     display: grid;
     grid-template-columns:20px 1fr 20px;
-    grid-template-rows:0.3fr 1fr 0.2fr;
+    grid-template-rows:0.5fr 70vh 0.5fr;
 }
 header{
     background-color: #16315C;
@@ -118,6 +118,6 @@ footer h2 {
 @media screen and (min-width: 768px){
     body{
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows:0.5fr 1.5fr 0.5fr;        
+        grid-template-rows:0.5fr 55vh 0.5fr;           
     }
 }
