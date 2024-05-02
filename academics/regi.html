@@ -19,21 +19,17 @@
     <main>
       <h1>Course Search</h1>
       <div class="searchcontainer">
-        <form action="results.html">
+        <form method="get" action="results.html">
           <!--term-->
           <label for="term">Term:</label>
           <select class="half" id="term" name="term" required>
             <option value="">__</option>
-            <option value="sum24">Summer 2024</option>
             <option value="fall24">Fall 2024</option>
           </select>
           <label for="subject">Subject:</label>
           <select class="long" id="subject" name="subject" required>
             <option value="">__</option>
-            <option value="asia">ASIA</option>
-            <option value="biol">BIOL</option>
             <option value="comp">COMP</option>
-            <option value="stor">STOR</option>
           </select>
           <label for="relation">Course Number:</label>
           <select class="quarter" id="relation" name="relation" required>
@@ -42,13 +38,11 @@
             <option value="equal">=</option>
             <option value="gte">=></option>
           </select>
-          <input class="threequarter" type="number" id="coursenum" min="50" max="999" required>
+          <input class="threequarter" type="number" id="coursenum" min="126" max="126" required>
           <label for="attribute">Attribute:</label>
-          <select class="long" id="attribute" name="attribute" required>
-            <option value="">__</option>
-            <option value="value">FC-VALUE</option>
+          <select class="long" id="attribute" name="attribute">
+            <option value="none">None</option>
             <option value="create">FC-CREATE</option>
-            <option value="">=></option>
           </select>
           <input type="submit" value="Search">
         </form>
