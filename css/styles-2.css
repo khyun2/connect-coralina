@@ -1,0 +1,70 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Outfit";
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/*fonts*/
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1 {
+    font-family: "Lexend";
+    font-weight: 600;
+    font-size: 30px;
+}
+h2 {
+    font-family: "Lexend";
+    font-size: 16px;
+    font-weight: 600;
+}
+h3 {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 600px;
+}
+h4 {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+}
+.white {
+    color: white
+}
+
+
+main {
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/*basic button styling*/
+.button {
+    background-color: #FFBCBD;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 2s ease-in-out;
+
+}
+.button:hover, .button:active {
+    background-color: #F97375; 
+}
+
+/*can change px to whtvr*/
+@media screen and (min-width: 750px){
+
+}
