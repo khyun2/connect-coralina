@@ -1,0 +1,123 @@
+*{
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1,h2,legend{
+    font-family: "Lexend", sans-serif;
+    color:#16315C;
+    font-weight: bold;
+}
+h1{
+    Font-family: “Lexend”;
+    Font-weight: 600;
+    Font-size: 30px;
+
+}
+h2 {
+    font-family: "Lexend";
+    font-size: 16px;
+    font-weight: 600;
+}
+html {
+    margin:0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns:20px 1fr 20px;
+    grid-template-rows:0.3fr 1fr 0.2fr;
+}
+header{
+    background-color: #16315C;
+    margin:0;
+    padding:0;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    
+}
+.logo{
+    position: relative;
+    width: 70%;
+    height:100%;
+    grid-column: 2/3;
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+    align-items: flex-end;
+    
+    
+}
+img{
+    display:block;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    max-height:100%;
+    object-fit: cover;
+    padding: 1rem;
+    margin-top:auto;
+    margin-bottom:auto;
+    align-self: center;
+}
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    padding: 3rem 1rem;
+}
+
+fieldset {
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+    border-radius: 10px;
+    border:solid 2px #16315C;
+    color:#16315C;
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 100%;
+    border: solid 2px #16315C;
+}
+input[type=submit]{
+    background-color: #FEDAD9;
+    width: 80%;
+    font-family: "Lexend";
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 235ms;
+}
+input[type=submit]:hover, input[type=submit]:focus{
+    background-color: #F97375;
+}
+main h2 a{
+    color:#16315C;
+}
+footer {
+    grid-row:3/4;
+    grid-column: 1/4;
+    text-align: center;
+    background-color: #16315C;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:hover, a:focus{
+    text-decoration: underline;
+}
+footer h2 {
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows:0.5fr 1.5fr 0.5fr;        
+    }
+}
