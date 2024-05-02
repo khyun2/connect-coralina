@@ -50,10 +50,29 @@ h4 {
     color: white
 }
 
+
+body {
+    height: 100%;
+    grid-template-rows: min-content auto 1fr min-content;
+}
+
+header {
+    grid-row: 1;
+}
+
 main {
-    min-height: 80vh;
+    grid-row: 2;
     width: 100%;
     padding: 20px;
+}
+
+.spacer {
+    grid-row: 3;
+    height: 100%;
+}
+
+footer {
+    grid-row: 4;
 }
 
 

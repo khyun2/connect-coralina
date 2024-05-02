@@ -38,12 +38,6 @@ header a {
 .small-logo img {
     display: block;
 }
-/* .logocenter {
-    margin-top: 0.35vh;
-}
-.headercenter {
-    padding-top: 0.35vh;
-} */
 header h1 {
     display: block;
     margin-top: 1rem;
@@ -67,8 +61,6 @@ header h1 {
 .menu-item a:hover, .menu-item a:focus {
     text-decoration: #ffffff underline solid 1px;
 }
-
-/* main styles */
 
 /* footer styles */
 footer {
