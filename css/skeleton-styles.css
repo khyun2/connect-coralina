@@ -15,14 +15,6 @@ html, body {
 img {
     width: 100%;
 }
-body {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto auto auto;
-}
 
 /* header styles */
 header {
@@ -46,6 +38,12 @@ header a {
 .small-logo img {
     display: block;
 }
+/* .logocenter {
+    margin-top: 0.35vh;
+}
+.headercenter {
+    padding-top: 0.35vh;
+} */
 header h1 {
     display: block;
     margin-top: 1rem;

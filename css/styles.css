@@ -9,10 +9,10 @@
     padding: 0;
     margin: 0;
     border: 0;
-    color: #16315C;
     font-family: "Outfit";
     font-size: 16px;
     box-sizing: border-box;
+    color: #16315C;
 }
 
 /*fonts*/
@@ -50,27 +50,12 @@ h4 {
     color: white
 }
 
-/*header styling*/
-header {
-    background-color: #16315C;
-    width: 100%;
-    min-height: 10vh;
-    padding: 25px;
-}
-
 main {
     min-height: 80vh;
     width: 100%;
     padding: 20px;
 }
 
-footer {
-    background-color: #16315C;
-    color: white;
-    width: 100%;
-    min-height: 10vh;;
-    padding: 25px;
-}
 
 /*basic button styling*/
 .button {
@@ -78,14 +63,33 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    transition: background-color 2s ease-in-out;
+    transition: background-color 235ms ease-in-out;
 
 }
 .button:hover, .button:active {
     background-color: #F97375; 
 }
+.bottom-pad {
+    padding-bottom: 10px;
+}
 
+input[type=submit] {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FFBCBD;
+    border-radius: 10px;
+    border: 2px solid #16315C;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 235ms ease-in-out;
+}
+input[type=submit]:hover, input[type=submit].active {
+    background-color: #F97375; 
+}
 /*can change px to whtvr*/
-@media screen and (min-width: 750px){
+@media screen and (min-width: 768px){
 
 }
