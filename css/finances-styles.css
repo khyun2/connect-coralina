@@ -1,0 +1,214 @@
+/* color palette
+navy-16315C
+coral1-F97375
+coral2-FFBCBD
+coral3-FEDAD9 */
+
+/* document level styles */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "spacer"
+        "footer";
+    grid-template-rows: min-content auto 1fr min-content;
+    height: 100vh;
+}
+.spacer {
+    grid-area: spacer;
+}
+
+/* header styles */
+header {
+    background-color: #16315C;
+    color: #ffffff;
+    position: static;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-areas:
+        "logo title nav";
+    align-items: start;
+    max-height: min-content;
+}
+header a {
+    padding: 1rem;
+    grid-area: logo;
+}
+.small-logo {
+    width: 30px;
+}
+.small-logo img {
+    display: block;
+}
+header h1 {
+    display: block;
+    margin-top: 1rem;
+    grid-area: title;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nav-positioner {
+    position: relative;
+    align-self: center;
+    grid-area: nav;
+}
+.nav-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Outfit", sans-serif;
+    text-align: end;
+}
+.menu-item a:hover, .menu-item a:focus {
+    text-decoration: #ffffff underline solid 1px;
+}
+.bottom-pad {
+    padding-bottom: 10px;
+}
+
+/* main styles */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "balance balance"
+        "balance balance"
+        "records aid"
+        "manage help";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+.gutter-left, .gutter-right {
+    display: none;
+}
+.card-balance {
+    display: flex;
+    grid-area: balance;
+    color: #16315C;
+    border-radius: 10px;
+    border: 2px solid #16315C;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+.card-balance h2 {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.card-balance strong {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.card-balance h3 {
+    margin: 0;
+}
+.button-pay {
+    display: block;
+    color: #16315C;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #FFBCBD;
+    border-radius: 10px;
+    border: 2px solid #16315C;
+    transition: all 235ms;
+}
+.button-pay:hover, .button-pay:focus {
+    background-color: #F97375;
+}
+.link-card {
+    display: block;
+    background-color: #16315C;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    transition: all 235ms;
+    position: relative;
+    overflow: hidden;
+}
+.link-card .fa {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255, 0.1);
+}
+.link-card:hover, .link-card:focus {
+    color: #FFBCBD;
+}
+.records {
+    grid-area: records;
+}
+.aid {
+    grid-area: aid;
+}
+.manage {
+    grid-area: manage;
+}
+.help {
+    grid-area: help;
+}
+
+/* footer styles */
+footer {
+    background-color: #16315C;
+    padding: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    max-height: min-content;
+}
+footer p {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-areas:
+            "left balance balance balance balance right"
+            "left records aid manage help right";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+    }
+    .gutter-left {
+        grid-area: left;
+        display: block;
+        width: 10vw;
+    }
+    .gutter-right {
+        grid-area: right;
+        display: block;
+        width: 10vw;
+    }
+    .link-card .fa {
+        font-size: 5rem;
+    }
+}
