@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 a:active,
 a:hover {
   outline: 0;
@@ -25,7 +32,7 @@ a:hover {
 }
 
 .nav-toggle:before {
-  color: rgb(255, 255, 255); /* edit this to change the icon color */
+  color: #ffffff; /* edit this to change the icon color */
   font: normal 28px/55px "responsivenav"; /* edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
@@ -73,7 +80,12 @@ header {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 700px) {
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .logo {
@@ -81,7 +93,14 @@ header {
   font-weight: bold;
   line-height: 55px;
   padding: 0 20px;
-  color: rgb(255, 255, 255);
+  color: black;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .nav-collapse,
@@ -100,7 +119,7 @@ header {
 .nav-collapse a {
   text-decoration: none;
   padding: 0.7em 1em;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   width: 100%;
   display: block;
 }
@@ -109,6 +128,7 @@ header {
   padding-left: 2em;
 }
 
+/* commented out to stay as hamburger nav
 @media screen and (min-width: 768px) {
   .nav-collapse ul {
   flex-direction: row;
@@ -137,3 +157,4 @@ header {
     display: none;
   }
 }
+*/
