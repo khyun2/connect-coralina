@@ -117,7 +117,7 @@ footer h2 {
 
 @media screen and (min-width: 768px){
     body{
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 10vw 2fr 10vw;
         grid-template-rows:0.5fr 55vh 0.5fr;           
     }
 }
