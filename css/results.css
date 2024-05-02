@@ -41,3 +41,10 @@ input[type=submit]:hover, input[type=submit].active {
 .inline {
     display: inline-flex;
 }
+
+@media screen and (min-width: 768px){
+    main {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
