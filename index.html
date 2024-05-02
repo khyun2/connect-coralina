@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesindex.css">
 </head>
 <body>
     <header>
-        <div class="logo"><img src="imgs/logo.png" alt="The University of North Coralina"></div>
+        <div class="logo"><img src="icons/big-logo.png" alt="The University of North Coralina"></div>
     </header>
     <main>
-      
         <form method="get" action="#">
           <fieldset>
-            <h2>Log In</h2>
-            <br>
-              <label>
-                Username: <br>
-                <input type="text" id="username" name="username" value=""/>
-              </label>
-              <br>
-              <label>
-                Password: <br>
-                <input type="text" id="password" name="password" value=""/>
-              </label>
+            <h1>Log In</h1>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" value=""/>
+              <label for="password">Password:</label>
+              <input type="text" id="password" name="password" value=""/>
           </fieldset>
           <input type="submit" id="submit" name="submit" value="Submit"/>
         </form>
@@ -39,7 +31,8 @@
         <h2><a href="">Continue as guest</a></h2>
     </main>
     <footer>
-      <h2>&copy;2024</h2>
+      <i class="fa fa-copyright white inline"></i>
+      <p class="white inline">2024</p>
     </footer>
 </body>
 </html>
