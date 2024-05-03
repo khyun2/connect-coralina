@@ -21,7 +21,6 @@ header {
     background-color: #16315C;
     color: #ffffff;
     position: static;
-    grid-area: header;
     display: grid;
     grid-template-columns: min-content 1fr 1fr;
     grid-template-areas:
