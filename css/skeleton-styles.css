@@ -5,19 +5,19 @@ coral2-FFBCBD
 coral3-FEDAD9 */
 
 /* document level styles */
-* {
+/* * {
     box-sizing: border-box;
 }
 html, body {
     margin: 0;
     padding: 0;
-}
-img {
+} */
+/* img {
     width: 100%;
-}
+} */
 
 /* header styles */
-header {
+/* header {
     background-color: #16315C;
     color: #ffffff;
     position: static;
@@ -59,10 +59,10 @@ header h1 {
 }
 .menu-item a:hover, .menu-item a:focus {
     text-decoration: #ffffff underline solid 1px;
-}
+} */
 
 /* footer styles */
-footer {
+/* footer {
     background-color: #16315C;
     padding: 1rem;
     color: #ffffff;
@@ -73,4 +73,4 @@ footer {
 footer p {
     margin: 0;
     font-family: "Lexend", sans-serif;
-}
+} */
