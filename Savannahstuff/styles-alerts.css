@@ -1,0 +1,155 @@
+/* color palette
+navy-16315C
+coral1-F97375
+coral2-FFBCBD
+coral3-FEDAD9 */
+
+/* document level styles */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+img {
+    width: 100%;
+}
+h1{
+    Font-family: “Lexend”, sans-serif;
+Font-weight: 600;
+Font-size: 30px;
+
+}
+
+body{
+    display:grid;
+    grid-template-columns:20px 1fr 20px;
+    grid-template-rows:0.6fr 80vh 0.4fr;
+    width:100vw;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    gap: 20px;
+}
+/* header styles */
+header {
+    background-color: #16315C;
+    color: #ffffff;
+    position: static;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-areas:
+        "logo title nav";
+    align-items: start;
+}
+header a {
+    padding: 1rem;
+    grid-area: logo;
+}
+.small-logo {
+    width: 30px;
+}
+.small-logo img {
+    display: block;
+}
+header h1 {
+    display: block;
+    margin-top: 1rem;
+    grid-area: title;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nav-positioner {
+    position: relative;
+    align-self: center;
+    grid-area: nav;
+}
+.nav-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Outfit", sans-serif;
+    text-align: end;
+}
+.menu-item a:hover, .menu-item a:focus {
+    text-decoration: #ffffff underline solid 1px;
+}
+
+/* main styles */
+main{
+    display:grid;
+    grid-row:2/3;
+    grid-column: 2/3;
+    grid-template-rows:0.5fr 0.5fr;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+.Notif,.Todo{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-rows: 1fr 4rem;
+}
+.Notif{
+    grid-row:1/2;
+    grid-column: 1/2;
+}
+.Todo{
+    grid-row:2/3;
+    grid-column: 1/2;
+}
+.label{
+    background-color:#16315C;
+    border-radius: 8px;
+    grid-row:2/3;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    color:white;
+}
+.icon{
+    background-color: #FEDAD9;
+    height:100%;
+    width:100%;
+    grid-row:1/2;
+    border-radius: 8px;
+    border: solid 2px #16315C;
+}
+/* footer styles */
+footer {
+    grid-row:3/4;
+    grid-column: 1/4;
+    background-color: #16315C;
+    padding: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin:0;
+}
+footer p {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 10vw 2fr 10vw;
+    }
+    main{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+    }
+    .Todo{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .Notif{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+}
