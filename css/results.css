@@ -41,6 +41,25 @@ input[type=submit]:hover, input[type=submit].active {
 .inline {
     display: inline-flex;
 }
+button {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 600px;
+    background-color: white;
+    padding: 0px 5px;
+    border-radius: 8px;
+    border: 1.75px solid #16315C;
+    transition: color 235ms ease-in-out;
+}
+button:hover, button:focus, button:active {
+    background-color: #16315C;
+    color: white;
+}
+
+button:hover:after, button:focus:after, button:active:after {
+    background-color: white;
+    color: #16315C;
+}
 
 @media screen and (min-width: 768px){
     main {
