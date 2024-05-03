@@ -3,22 +3,6 @@
     box-sizing: border-box;
     text-align: center;
 }
-h1,h2,legend{
-    font-family: "Lexend", sans-serif;
-    color:#16315C;
-    font-weight: bold;
-}
-h1{
-    Font-family: “Lexend”;
-    Font-weight: 600;
-    Font-size: 30px;
-
-}
-h2 {
-    font-family: "Lexend";
-    font-size: 16px;
-    font-weight: 600;
-}
 html {
     margin:0;
     padding: 0;
@@ -47,8 +31,6 @@ header{
     margin-right: auto;
     display:flex;
     align-items: flex-end;
-    
-    
 }
 img{
     display:block;
@@ -70,8 +52,8 @@ main{
 }
 
 fieldset {
-    margin: 2rem;
-    padding: 2rem;
+    margin: 0 2rem 20px 2rem;
+    padding: 20px 2rem;
     position: relative;
     border-radius: 10px;
     border:solid 2px #16315C;
@@ -79,14 +61,14 @@ fieldset {
 }
 
 input{
-    padding: 0.5rem;
+    padding: 10px;
     border-radius: 8px;
     width: 100%;
     border: solid 2px #16315C;
 }
 input[type=submit]{
     background-color: #FEDAD9;
-    width: 80%;
+    width: 84%;
     font-family: "Lexend";
     font-size: 16px;
     font-weight: 600;
@@ -111,8 +93,21 @@ a {
 a:hover, a:focus{
     text-decoration: underline;
 }
-footer h2 {
+footer {
     color: white;
+    padding: 1rem;
+}
+
+.inline { 
+    display: inline;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px){

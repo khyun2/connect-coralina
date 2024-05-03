@@ -57,22 +57,22 @@ body {
 }
 
 header {
-    grid-row: 1;
+    grid-row: 1/2;
 }
 
 main {
-    grid-row: 2;
+    grid-row: 2/3;
     width: 100%;
     padding: 20px;
 }
 
 .spacer {
-    grid-row: 3;
+    grid-row: 3/4;
     height: 100%;
 }
 
 footer {
-    grid-row: 4;
+    grid-row: 4/5;
 }
 
 
@@ -105,10 +105,6 @@ input[type=submit] {
     text-align: center;
     transition: background-color 235ms ease-in-out;
 }
-input[type=submit]:hover, input[type=submit].active {
+input[type=submit]:hover, input[type=submit].active, input[type=submit].focus {
     background-color: #F97375; 
-}
-/*can change px to whtvr*/
-@media screen and (min-width: 768px){
-
 }
