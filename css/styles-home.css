@@ -68,6 +68,9 @@ header h1 {
 .menu-item a:hover, .menu-item a:focus {
     text-decoration: #ffffff underline solid 1px;
 }
+.bottom-pad {
+    padding-bottom: 10px;
+}
 
 /* main styles */
 main{

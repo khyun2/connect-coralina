@@ -1,0 +1,199 @@
+/* color palette
+navy-16315C
+coral1-F97375
+coral2-FFBCBD
+coral3-FEDAD9 */
+
+/* document level styles */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "spacer"
+        "footer";
+    grid-template-rows: min-content auto 1fr min-content;
+    height: 100vh;
+}
+.spacer {
+    grid-area: spacer;
+}
+
+/* header styles */
+header {
+    background-color: #16315C;
+    color: #ffffff;
+    position: static;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-areas:
+        "logo title nav";
+    align-items: start;
+}
+header a {
+    padding: 1rem;
+    grid-area: logo;
+}
+.small-logo {
+    width: 30px;
+}
+.small-logo img {
+    display: block;
+}
+header h1 {
+    display: block;
+    margin-top: 1rem;
+    grid-area: title;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nav-positioner {
+    position: relative;
+    align-self: center;
+    grid-area: nav;
+}
+.nav-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Outfit", sans-serif;
+    text-align: end;
+}
+.menu-item a:hover, .menu-item a:focus {
+    text-decoration: #ffffff underline solid 1px;
+}
+.bottom-pad {
+    padding-bottom: 10px;
+}
+
+/* main styles */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "heading"
+        "form";
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+    font-family: "Outfit", sans-serif;
+    color: #16315C;
+}
+.gutter-left, .gutter-right {
+    display: none;
+}
+h2 {
+    grid-area: heading;
+    color: #16315C;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #16315C;
+}
+form label {
+    font-size: 20px;
+}
+form select, form input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid #16315C;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 5px;
+    transition: border-color 235ms;
+}
+form select:hover, form select:focus {
+    border-color: #F97375;
+    cursor: pointer;
+}
+form input:hover, form input:focus {
+    border-color: #F97375;
+}
+span {
+    font-weight: 600;
+}
+hr {
+    display: none;
+}
+.button-pay {
+    display: block;
+    color: #16315C;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FFBCBD;
+    border-radius: 10px;
+    border: 2px solid #16315C;
+    margin-top: 20px;
+    transition: all 235ms;
+}
+.button-pay:hover, .button-pay:focus {
+    background-color: #F97375;
+    cursor: pointer;
+}
+
+/* footer styles */
+footer {
+    background-color: #16315C;
+    padding: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-areas:
+        "left heading right"
+        "left form right";
+        grid-template-columns: auto auto auto;
+    }
+    .gutter-left {
+        grid-area: left;
+        display: block;
+        width: 10vw;
+    }
+    .gutter-right {
+        grid-area: right;
+        display: block;
+        width: 10vw;
+    }
+    form {
+        border: none;
+        padding: 0;
+    }
+    hr {
+        display: block;
+        margin: 0;
+        border: 1px solid #dddddd;
+    }
+}

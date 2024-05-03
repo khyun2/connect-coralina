@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="author" content="Kelly Yun">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Finances - Connect Coralina</title>
+    <title>Payment - Connect Coralina</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/nav-styles.css">
-    <link rel="stylesheet" href="../css/finances-styles.css">
+    <link rel="stylesheet" href="../css/finances-payment-styles.css">
     <script src="../js/responsive-nav.js"></script>
 </head>
 
@@ -36,19 +36,36 @@
     <main>
         <div class="gutter-left"></div>
         <div class="gutter-right"></div>
-        <section class="card-balance">
-            <h2>Current Account Balance:</h2>
-            <h3><strong>$1234.56</strong></h3>
-            <a class="button-pay" href="finances-payment.html">Make Payment</a>
-        </section>
-        <a class="link-card records" href="#">Records <i class="fa fa-file-text-o"></i></a>
-        <a class="link-card aid" href="#">Financial Aid <i class="fa fa-money"></i></a>
-        <a class="link-card manage" href="#">Manage Accounts <i class="fa fa-address-book-o"></i></a>
-        <a class="link-card help" href="#">Help <i class="fa fa-question-circle-o"></i></a>
+        <h2>Make Payment</h2>
+        <form method="get" action="finances-confirmation.html">
+            <div class="form-q pay-period">
+                <label for="pay-period"><span>1.</span> Select payment period:</label><br>
+                <select id="pay-period" name="pay-period" required>
+                    <option disabled selected></option>
+                    <option value="2024SU">Summer 2024</option>
+                    <option value="2024FA">Fall 2024</option>
+                </select>
+            </div>
+            <hr>
+            <div class="form-q pay-amount">
+                <label for="pay-amount"><span>2.</span> Input payment amount:</label><br>
+                <input id="pay-amount" name="pay-amount" type="number" min="0.00" step="0.01" placeholder="$0.00" required>
+            </div>
+            <hr>
+            <div class="form-q pay-method">
+                <label for="pay-method"><span>3.</span> Select payment method:</label><br>
+                <select id="pay-method" name="pay-method" required>
+                    <option disabled selected></option>
+                    <option value="card1234">Card ...1234</option>
+                    <option value="card5678">Card ...5678</option>
+                </select>
+            </div>
+            <button type="submit" class="button-pay">Pay Now</button>
+        </form>
     </main>
-
-    <div class="spacer"></div>
     
+    <div class="spacer"></div>
+
     <footer>
         <i class="fa fa-copyright"></i>
         <p>2024</p>
