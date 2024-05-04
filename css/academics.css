@@ -26,7 +26,7 @@ main {
     position: relative;
 }
 .regi-label {
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -35,7 +35,7 @@ main {
     background-color: #16315C;
 }
 .trans-label {
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -44,7 +44,7 @@ main {
     background-color: #16315C;
 }
 .advi-label {
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -75,12 +75,18 @@ main {
         grid-column: 3/4;
     }
     .regi-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px;
     }
     .trans-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px
     }
     .advi-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px;
     }
 }
