@@ -75,12 +75,18 @@ main {
         grid-column: 3/4;
     }
     .regi-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px;
     }
     .trans-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px
     }
     .advi-label {
-        padding-top: 34px;
+        height: 25%;
+        padding-top: 27px;
+        padding-right: 0px;
     }
 }
