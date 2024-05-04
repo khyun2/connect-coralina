@@ -127,9 +127,10 @@ main{
     color: white;
     padding: 20px;
     text-decoration: none;
+    transition: color 235ms;
 }
 .label a:hover, .label a:focus {
-    text-decoration: white 1.5px underline solid;
+    color: #FFBCBD;
 }
 
 /* footer styles */
