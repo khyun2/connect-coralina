@@ -15,11 +15,35 @@ html, body {
 img {
     width: 100%;
 }
-h1{
-    Font-family: “Lexend”, sans-serif;
-Font-weight: 600;
-Font-size: 30px;
-
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1 {
+    font-family: "Lexend";
+    font-weight: 600;
+    font-size: 30px;
+}
+h2 {
+    font-family: "Lexend";
+    font-size: 16px;
+    font-weight: 600;
+}
+h3 {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 600px;
+}
+h4 {
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
 }
 
 body{
