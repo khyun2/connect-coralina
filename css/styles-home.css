@@ -17,7 +17,7 @@ img {
 }
 body {
     display: grid;
-    grid-template-rows:0.5fr 95vh 0.5fr;
+    grid-template-rows:min-content auto 1fr min-content;
     grid-template-columns: 20px 1fr 20px;
     gap:20px;
     height: 100vh;
@@ -30,7 +30,12 @@ h1 {
 h2 {
     font-family: "Lexend";
     font-size: 16px;
-    font-weight: 600;}
+    font-weight: 600;
+}
+.spacer {
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
 
 /* header styles */
 header {
@@ -87,8 +92,7 @@ main{
     grid-column: 2/3;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 10px;
+    grid-template-rows: min-content min-content min-content 1fr;
     gap:1rem;
     
 }
@@ -134,12 +138,13 @@ main{
 .Finance a,.Academics a, .PI a, .alerts a {
     display:block;
     text-decoration: none;
+    transition: color 235ms;
 }
 .Finance a:hover,.Academics a:hover, .PI a:hover, .alerts a:hover{
-    text-decoration: underline;
+    color: #FFBCBD;
 }
 .Finance a:focus,.Academics a:focus, .PI a:focus, .alerts a:focus{
-    text-decoration: underline;
+    color: #FFBCBD;
 }
 .label h2{
     padding: 0.3rem;
@@ -148,7 +153,7 @@ main{
 
 /* footer styles */
 footer {
-    grid-row:3/4;
+    grid-row:4/5;
     grid-column: 1/4;
     background-color: #16315C;
     padding: 1rem;
@@ -164,7 +169,6 @@ footer p {
 @media  screen and (min-width:768px) {
     body{
         grid-template-columns: 10vw 2fr 10vw;
-        grid-template-rows: 0.6fr 105vh 0.4fr;
     }
     main{
         grid-template-columns: 1fr 1fr;

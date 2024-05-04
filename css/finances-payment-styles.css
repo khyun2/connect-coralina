@@ -152,6 +152,7 @@ hr {
 }
 .button-pay:hover, .button-pay:focus {
     background-color: #F97375;
+    border: 2px solid #16315C;
     cursor: pointer;
 }
 
