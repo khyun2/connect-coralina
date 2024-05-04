@@ -86,9 +86,11 @@ main{
 .alerts,.PI,.Academics,.Finance{
     width:100%;
     height:100%;
-    border-radius: 25px;
+    border-radius: 8px;
     display:grid;
     grid-template-rows: 1fr 4rem;
+    background-color: #FEDAD9;
+    border: solid 2px #16315C;
 }
 .alerts{
     grid-row:1/2;
@@ -108,7 +110,6 @@ main{
 }
 .label{
     background-color:#16315C;
-    border-radius: 8px;
     grid-row:2/3;
     padding: 0;
     margin:0;
@@ -116,18 +117,21 @@ main{
     color: white;
     
 }
+.Finance a,.Academics a, .PI a, .alerts a {
+    display:block;
+    text-decoration: none;
+}
+.Finance a:hover,.Academics a:hover, .PI a:hover, .alerts a:hover{
+    text-decoration: underline;
+}
+.Finance a:focus,.Academics a:focus, .PI a:focus, .alerts a:focus{
+    text-decoration: underline;
+}
 .label h2{
     padding: 0.3rem;
     
 }
-.icon{
-    background-color: #FEDAD9;
-    height:100%;
-    width:100%;
-    grid-row:1/2;
-    border-radius: 10px;
-    border: solid 2px #16315C;
-}
+
 /* footer styles */
 footer {
     grid-row:3/4;
