@@ -2,154 +2,131 @@
     font-family: "Outfit", sans-serif;
     box-sizing: border-box;
     text-align: center;
-}
-h1,h2,legend{
-    font-family: "Lexend", sans-serif;
     color:#16315C;
-    font-weight: bold;
-}
-h1{
-    Font-family: “Lexend”;
-    Font-weight: 600;
-    Font-size: 30px;
-
-}
-h2 {
-    font-family: "Lexend";
-    font-size: 16px;
-    font-weight: 600;
 }
 html {
     margin:0;
     padding: 0;
-    min-height:100%;
-    height:auto;
 }
 body{
     margin:0;
     padding:0;
     display: grid;
-    grid-template-columns:20px 1fr 20px;
-    grid-template-rows:0.5fr 70vh 0.5fr;
+    grid-template-columns:0px 1fr 0px;
+    grid-template-rows:min-content 1fr auto 1fr min-content;
     height: 100vh;
 }
+.spacer1 {
+    grid-row: 2/3;
+}
+.spacer2 {
+    grid-row: 4/5;
+}
+h1, h2 {
+    margin: 0;
+}
 header{
+    display: flex;
+    justify-content: center;
     background-color: #16315C;
     margin:0;
     padding:0;
     grid-row: 1/2;
     grid-column: 1/4;
-    
 }
 .logo{
-    position: relative;
-    width: 70%;
-    height:100%;
-    grid-column: 2/3;
-    margin: auto;
-    display:flex;
-    align-items: flex-end;
-    padding: 0;  
+    width:250px;
+    padding: 1rem;  
 }
 img{
     display:block;
-    position: absolute;
-    bottom:0;
     width: 100%;
-    max-height:100%;
-    object-fit: fill;
-    margin-top:auto;
-    margin-bottom:auto;
-    align-self: center;
-}
-main{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    height: 100%;
-    padding: 3rem 1rem;
 }
 
-fieldset {
-    margin: 20px;
+main{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 100%;
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
     padding: 20px;
     position: relative;
     border-radius: 10px;
     border:solid 2px #16315C;
     color:#16315C;
 }
-
+form h1 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+form label {
+    font-size: 16px;
+}
+.form-prompt, input {
+    text-align: left;
+    transition: border-color 235ms;
+}
+.form-prompt input:hover, .form-prompt input:focus {
+    border-color: #F97375;
+}
 input{
-    padding: 0.5rem;
+    padding: 5px;
     border-radius: 8px;
     width: 100%;
-    border: solid 2px #16315C;
+    border: solid 1.5px #16315C;
+    color:#16315C;
+    font-size: 16px;
 }
 input[type=submit]{
-    background-color: #FEDAD9;
-    width: 80%;
-    font-family: "Lexend";
+    text-align: center;
+    background-color: #FFBCBD;
+    border-width: 2px;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
     font-size: 16px;
     font-weight: 600;
+    padding: 10px 20px;
     transition: background-color 235ms;
 }
 input[type=submit]:hover, input[type=submit]:focus{
     background-color: #F97375;
+    cursor: pointer;
 }
-main h2 a{
+main a{
     color:#16315C;
-}
-footer {
-    grid-row:3/4;
-    grid-column: 1/4;
-    text-align: center;
-    background-color: #16315C;
-    height: 100%;
-}
-a {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
 }
 a:hover, a:focus{
     text-decoration: underline;
 }
 footer {
-    grid-row:3/4;
+    grid-row:5/6;
     grid-column: 1/4;
     background-color: #16315C;
     padding: 1rem;
-    color: #ffffff;
     display: flex;
     align-items: baseline;
     gap: 5px;
-    margin:0;
 }
 footer p {
+    color: white;
     margin: 0;
-    font-family: "Lexend", sans-serif;}
+    font-family: "Lexend", sans-serif;
+}
+footer i {
+    color: white;
+}
 
 @media screen and (min-width: 768px){
     body{
-        grid-template-columns: 10vw 1fr 10vw;
-        grid-template-rows:0.3fr 1fr 0.2fr;
-        height:auto;
-        min-height: 100%;
-        margin:0;
-        position:relative;
-    }
-    fieldset{
-        margin: 2rem;
-        padding: 2rem;
-    }
-
-    br{
-        height: 1rem;
-    }
-    input{
-        justify-self: center;
-        margin: 20px auto;
-    }
-    footer{
-        position:absolute;
-        bottom:0;
-        width: 100%;
+        grid-template-columns: 1fr 50vw 1fr;
     }
 }

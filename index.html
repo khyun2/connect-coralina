@@ -5,36 +5,38 @@
     <meta name="author" content="Savannah Lu">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Login - Connect Coralina</title>
     <link rel="stylesheet" href="css/stylesindex.css">
 </head>
 <body>
     <header>
         <div class="logo"><img src="icons/big-logo.png" alt="The University of North Coralina"></div>
     </header>
+    <div class="spacer1"></div>
     <main>
-        <form method="get" action="#">
-          <fieldset>
-            <h1>Log In</h1>
-              <label for="username">Username:</label>
-              <input type="text" id="username" name="username" value=""/>
-              <label for="password">Password:</label>
-              <input type="text" id="password" name="password" value=""/>
-          </fieldset>
-          <input type="submit" id="submit" name="submit" value="Submit"/>
+        <form method="get" action="home.html">
+            <h1>Connect Coralina</h1>
+              <div class="form-prompt">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value=""/>
+              </div>
+              <div class="form-prompt">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" value=""/>
+              </div>
+          <input type="submit" id="submit" name="submit" value="Log In"/>
         </form>
         <p>or</p>
-        <h2><a href="home.html">Continue as guest</a></h2>
+        <a href="home.html">Continue as guest</a>
     </main>
-    <div class="spacer"></div>
+    <div class="spacer2"></div>
     <footer>
-      <i class="fa fa-copyright white inline"></i>
-      <p class="white inline">2024</p>
+      <i class="fa fa-copyright"></i>
+      <p>2024</p>
     </footer>
 </body>
 </html>
