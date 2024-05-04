@@ -172,12 +172,12 @@ footer p {
     .gutter-left {
         grid-area: left;
         display: block;
-        width: 10vw;
+        width: 20vw;
     }
     .gutter-right {
         grid-area: right;
         display: block;
-        width: 10vw;
+        width: 20vw;
     }
     .redirects {
         grid-template-columns: 1fr 1fr;

@@ -60,7 +60,7 @@ input[type=submit]:hover, input[type=submit].active {
 
 @media screen and (min-width: 768px){
     main {
-        padding-left: 15vw;
-        padding-right: 15vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }

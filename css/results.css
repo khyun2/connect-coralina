@@ -63,7 +63,7 @@ button:hover:after, button:focus:after, button:active:after {
 
 @media screen and (min-width: 768px){
     main {
-        padding-left: 15vw;
-        padding-right: 15vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }

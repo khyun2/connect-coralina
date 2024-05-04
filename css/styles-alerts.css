@@ -151,7 +151,7 @@ footer p {
 }
 @media screen and (min-width: 768px){
     body{
-        grid-template-columns: 10vw 2fr 10vw;
+        grid-template-columns: 1fr 60vw 1fr;
     }
     main{
         grid-template-columns:1fr 1fr;
